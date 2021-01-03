@@ -4,16 +4,23 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Потоки</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <div class="wrapper">
-      <form action="/zip">
-        <label for="file">Выберите файл:</label>
-        <input type="file" name="file" id="file" />
-        <input type="submit">Скачать архив</input>
+      <form id="task1" action="/zip">
+        <p>Задание 1-1</p>
+        <input type="file" name="file1" id="file_task1" />
+        <input type="submit" value="Скачать архив" />
       </form>
 
       <a href="/pipe">Задание 1-2</a>
+
+      <form id="task3" action="/transform">
+        <p>Задание 1-3</p>
+        <input type="file" name="file3" id="file_task3" />
+        <input type="submit" value="Скачать файл" />
+      </form>
     </div>
 
     <script src="main.js"></script>
